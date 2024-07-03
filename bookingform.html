@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+.hide {
+    display: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <form id="booking-form">
+        <h2>Restaurant Booking Form</h2>
+        <label for="booking-choice">Choice of Booking:</label>
+        <select id="booking-choice" name="booking-choice" >
+            <option value="">Select booking choice</option>
+            <option value="full-day">Full Day Booking</option>
+            <option value="half-day">Half Day Booking</option>
+            <option value="hourly">Hourly Booking</option>
+            <option value="hourly">Night Booking</option>
+        </select><br><br><br><br><br>
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" >
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="no-of-person">No of Person:</label>
+        <input type="number" id="no-of-person" name="no-of-person">
+
+        <div class="date-container " >
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="time-container  ">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" >
+        </div>
+
+        <div class="slot-container">
+            <label for="slot">Slot:</label>
+
+            <select id="slot" name="slot">
+                <option value="">Select slot</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+
+        </div>
+        <input type="submit" value="Book Now">
+    </form>
+
+    <script src="Booking.js"></script>
+</body>
+</html>
